@@ -1,0 +1,44 @@
+.card_hom {
+    width: 300px;
+    height: 250px;
+    border: solid rgb(78, 74, 74);
+}
+
+.card_hom h2 {
+    text-align: center;
+}
+
+.card_hom p {
+    text-align: center;
+}
+
+.time {
+    text-align: center;
+}
+
+.crud_button {
+    width: 260px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button_dit {
+    float: left;
+    width: 130px;
+    height: 50px;
+    background-color: rgb(14, 182, 14);
+    text-align: center;
+}
+
+.button_destroy {
+    float: left;
+    width: 130px;
+    height: 50px;
+    background-color: rgb(224, 37, 37);
+    text-align: center;
+}
+.text_link {
+    margin-top: 12px;
+}

@@ -1,0 +1,26 @@
+<h1>Questions</h1>
+
+<% @questions.each do |question| %>
+
+  <div class="card_hom"> 
+    <h2><%= question.title %></h2>
+  
+    <p> <%= question.body %> </p>
+
+    <div class="time"><%= question.formatted_created_at %></div>
+    
+    <div class="crud_button">
+      <div class="button_dit"> 
+        <div class="text_link">
+          <%= link_to 'Edit', edit_question_path(question) %> 
+        </div>
+      </div>
+      <div class = "button_destroy">
+        <div class="text_link">
+          <%= link_to 'Destroy', question_path(question), data: {method: :delete, confirm: 'Are you sure?'} %>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<% end %>
