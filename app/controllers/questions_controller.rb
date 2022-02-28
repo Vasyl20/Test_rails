@@ -19,6 +19,9 @@ class QuestionsController < ApplicationController
     end
   end
 
+  def show
+    @question = Question.find_by id: params[:id]
+  end
 
   def index
      @questions = Question.all
