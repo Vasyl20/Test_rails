@@ -17,7 +17,7 @@
       </div>
       <div class = "button_destroy">
         <div class="text_link">
-          <%= link_to 'Destroy', question_path(question), data: {method: :delete, confirm: 'Are you sure?'} %>
+            <%= link_to 'Destroy', question_path(question),method: :delete, data: { turbo_method: :delete }  %>
         </div>
       </div>
     </div>
